@@ -22,15 +22,31 @@
     />
     <link rel="icon" href="./assets/apple-touch-icon.png" type="image/png" />
     <link rel="icon" href="./assets/favicon-16x16.png" type="image/png" />
-    <link rel="icon" href="./assets/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="./assets/favicon-32x32.png" 
+    type="image/png" />
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Asif's World</title>
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="logo">Oficial<span>Asif</span></a>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+      <!-- <nav>
+        <a href="#" class="active"><i class="fa-solid fa-house"></i></a>
+        <a href="#about"><i class="fa-solid fa-user"></i></a>
+        <a href="#education"><i class="fa-solid fa-graduation-cap"></i></a>
+        <a href="#skills"><i class="fa-solid fa-list-check"></i></a>
+        <a href="#projects"><i class="fa-solid fa-folder-open"></i></a>
+        <a href="#contact"><i class="fa-solid fa-address-book"></i></a>
+    </nav> -->
+       <a href="#home" class="logo">Oficial<span>Asif</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i> 
 
       <nav class="navbar">
         <a href="#home">Home</a>
@@ -38,7 +54,7 @@
         <a href="#services">Services</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
-      </nav>
+      </nav> 
     </header>
 
     <section class="home" id="home">
@@ -247,36 +263,44 @@
     </section>
 
     <!-- conatct  -->
-     
-<section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <div class="input-group">
-      <div class="input-box">
-        <input type="hidden" name="access_key" value="e788919a-3799-4f1b-9107-99384b8abdf8">
-        <input type="text" name="name" placeholder="Full Name" required />
-        <input type="text" name="subject" placeholder="Subject" required />
-      </div>
 
-      <div class="input-box">
-        <input type="number" name="phone" placeholder="Phone Number" required />
-        <input type="email" name="email" placeholder="Email" required />
-      </div>
-    </div>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="input-group">
+          <div class="input-box">
+            <input
+              type="hidden"
+              name="access_key"
+              value="e788919a-3799-4f1b-9107-99384b8abdf8"
+            />
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+          </div>
 
-    <div class="input-group-2">
-      <textarea
-        name="message"
-        cols="30"
-        rows="10"
-        placeholder="Your Message"
-        required
-      ></textarea>
-      <input type="submit" value="Send Message" class="btn" />
-    </div>
-  </form>
-</section>
+          <div class="input-box">
+            <input
+              type="number"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+        </div>
 
+        <div class="input-group-2">
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </div>
+      </form>
+    </section>
 
     <!-- footer  -->
 
